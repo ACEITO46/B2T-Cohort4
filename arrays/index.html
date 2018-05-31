@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id='showit'>  </h1>
+		<input type="button" value="fruits" onclick="juices()">
+
+		<script>
+			
+			function juices(){
+				var fruits = ["apple","orange","kiwi"];
+				var fruit = prompt("Enter fruit").toLowerCase();
+				fruits.push(fruit);
+				fruits.sort();
+				document.getElementById("showit").innerHTML=fruits.join(" with ")
+
+
+			}
+
+			
+		</script>
+
+	</body>
+</html>
