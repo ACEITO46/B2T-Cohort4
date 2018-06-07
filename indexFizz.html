@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id ="text"></h1>
+	<script>
+		var num = 1;
+		while(num<=100){
+			if (num%3 == 0 && num%5 ==0){
+				console.log("fizzBuzz");
+				document.getElementById("text").innerHTML += "fizzBuzz"+"<br>";
+
+			}
+			else if (num%5 ==0){
+				console.log("buzz");
+				document.getElementById("text").innerHTML += "Buzz"+"<br>";
+
+			}
+			else if (num%3 ==0){
+				console.log("fizz");
+				document.getElementById("text").innerHTML += "fizz"+"<br>";
+
+
+			}
+
+			else{
+				console.log(num);
+				document.getElementById("text").innerHTML += num+"<br>";
+
+
+			}
+			num++;
+		}
+		
+	</script>
+
+</body>
+</html>
