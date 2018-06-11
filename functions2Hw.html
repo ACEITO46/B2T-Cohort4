@@ -9,7 +9,7 @@
 			#square {
 				height: 150px;
 				width: 150px;
-				background-color: red;
+				background-color: black;
 			}
 		</style>
 		<div id="square"></div>
@@ -29,13 +29,19 @@
 			changecolor.addEventListener("mouseenter",
 				function(){
 					if(lightswitch.value == "on"){
-						changecolor.style.backgroundColor ="green";
-					}
+						changecolor.style.backgroundColor ="green";}
+						else{
+							changecolor.style.backgroundColor ="black";
+						}
+					
 					
 			});
 				changecolor.addEventListener("mouseleave",function(){
 					if (lightswitch.value == "on")
 						changecolor.style.backgroundColor ="red";
+					else{
+						changecolor.style.backgroundColor ="black";
+					}
 				})
 
 			
