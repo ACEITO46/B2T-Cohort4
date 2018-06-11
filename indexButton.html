@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<input id="increase"type="button" value="Click to increase">
+		<h1 id ="display"></h1>
+
+		<script>
+			var count = 0;
+			document.getElementById("increase").addEventListener('click',
+				function(){
+					count++;
+					document.getElementById("display").innerHTML = count;
+			});
+		</script>
+
+	</body>
+</html>

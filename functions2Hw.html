@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<input id="light" type="button" value="off">
+		<style>
+			#square {
+				height: 150px;
+				width: 150px;
+				background-color: red;
+			}
+		</style>
+		<div id="square"></div>
+		<script>
+			var lightswitch = document.getElementById("light");
+
+			lightswitch.addEventListener("click",
+				function (){
+					if (lightswitch.value == "off"){
+						lightswitch.value = "on";
+ 					}
+ 					else{
+ 						lightswitch.value ="off";
+
+ 					}});
+			var changecolor = document.getElementById("square");
+			changecolor.addEventListener("mouseenter",
+				function(){
+					if(lightswitch.value == "on"){
+						changecolor.style.backgroundColor ="green";
+					}
+					
+			});
+				changecolor.addEventListener("mouseleave",function(){
+					if (lightswitch.value == "on")
+						changecolor.style.backgroundColor ="red";
+				})
+
+			
+
+				
+			
+
+			
+			
+			
+		</script>
+
+	</body>
+</html>

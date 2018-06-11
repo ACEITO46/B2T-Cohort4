@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var classroom = ['Nelson','Trey','Ben','Raph','Dem'];
+			var input = prompt('Check who is in class');
+			var student = classroom.find(function(name){
+				
+			 return name == input;
+			} );
+			console.log(student);
+
+			if (student == undefined){
+				console.log(input +' is not in class ');
+			}
+		</script>
+
+	</body>
+</html>
